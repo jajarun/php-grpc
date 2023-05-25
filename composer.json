@@ -1,0 +1,18 @@
+{
+    "name": "majh/php-grpc",
+    "autoload": {
+        "psr-4": {
+            "Majh\\PhpGrpc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "majh",
+            "email": "majiahao@yiwei.com"
+        }
+    ],
+    "require": {
+        "grpc/grpc": "^v1.3.0",
+        "google/protobuf": "^v3.3.0"
+    }
+}
