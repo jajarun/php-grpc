@@ -20,7 +20,7 @@ function greet($hostname, $name)
     // 参数赋值
     $request->setName($name);
     // 请求服务
-    list($response, $status) = $client->SayHello($request)->wait();
+    list($response, $status) = $client->SayHello($request,['authorization' => ['1234']])->wait();
     // 响应处理
     if ($status->code !== Grpc\STATUS_OK) {
         echo "ERROR: " . $status->code . ", " . $status->details . PHP_EOL;
